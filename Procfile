@@ -1,1 +1,1 @@
-web: gunicorn pdpwpet.wsgi
+web: gunicorn WPET.wsgi
