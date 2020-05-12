@@ -13,5 +13,5 @@ def QandA(request):
 def teaminfo(request):
     return render(request, 'website/teaminfo.html')
 
-def prototype(request):
-    return render(request, 'website/prototype.html')
+def milestone(request):
+    return render(request, 'website/milestone.html')

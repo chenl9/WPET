@@ -8,5 +8,5 @@ urlpatterns = [
     path('WPET/', views.WPET, name="WPET"),
     path('Q&A/', views.QandA, name="QandA"),
     path('team/', views.teaminfo, name="team"),
-    path('prototype/', views.prototype, name="prototype"),
+    path('milestone/', views.milestone, name="milestone"),
 ]
