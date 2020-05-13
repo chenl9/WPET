@@ -15,3 +15,9 @@ def teaminfo(request):
 
 def milestone(request):
     return render(request, 'website/milestone.html')
+
+def prototype(request):
+    return render(request, 'website/Prototype.html')
+
+def testing(request):
+    return render(request, 'website/testing.html')
