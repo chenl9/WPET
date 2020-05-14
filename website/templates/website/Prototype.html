@@ -2,10 +2,47 @@
 {% load static %}
 
 {%block content%}
-<div class = 'col text-center'>
-    <div class="article-content-outer m-3" >
-      <h1>Testing</h1>
-      <P>VEST PICTURE HERE</P>
-      <p>The vest is our goal for wearable PET-scanning device. It’s  around 10 kg, and the patient is able to wear it and do some simple daily activities while wearing it. It has a battery and the vest will track relative motion to the patient’s body, so that it’s always known, where the detective panels are relative to the body. </p>
+<!-- Nav tabs -->
+<div class="row mx-5 px-5">
+
+  <div class="col-3">
+    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <a class="nav-link active" id="v-pills-WPET-tab" data-toggle="pill" href="#v-pills-WPET" role="tab" aria-controls="v-pills-WPET" aria-selected="true">WPET</a>
+      <a class="nav-link" id="v-pills-EasyPET-tab" data-toggle="pill" href="#v-pills-EasyPET" role="tab" aria-controls="v-pills-EasyPET" aria-selected="false">EasyPET</a>
+      <a class="nav-link" id="v-pills-Prototype-tab" data-toggle="pill" href="#v-pills-Prototype" role="tab" aria-controls="v-pills-Prototype" aria-selected="false">Prototype</a>
+    </div>
+  </div>
+  <div class="col-9 ml-auto">
+    <div class="tab-content" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="v-pills-WPET" role="tabpanel" aria-labelledby="v-pills-WPET-tab">
+        <p class = "text-justify mx-3">Our goal is making a wearable PET-scanning vest. It’s  around 10 kg, and the patient is able to wear it and do some simple daily activities while wearing it. It has a battery and the vest will track relative motion to the patient’s body, so that it’s always known, where the detective panels are relative to the body.
+          </p>
+          <img src="../../static/demo.png" alt="demo" style="max-height:500px">
+      </div>
+      <div class="tab-pane fade" id="v-pills-EasyPET" role="tabpanel" aria-labelledby="v-pills-EasyPET-tab">
+        <p class = "text-justify mx-3">The University of Manchester and Caen SyS are studying the way to do PET in a smaller scale and collect the data to a normal computer.
+          </p>
+          <h4>Video here, but I can not creat the link</h4>
+      </div>
+      <div class="tab-pane fade" id="v-pills-Prototype" role="tabpanel" aria-labelledby="v-pills-Prototype-tab">
+        <div class="alert" role="alert">
+          <h4>Handling  the weight </h4>
+          <hr>
+          <p class = "text-justify mx-3">For making the device a wearable, we have been studying how to make it as easy to bare the weight of the device for the patient as possible. We simulate, how well the weight can be distributed. Also we make sure that the center of the weight should be at the patients spine. Also there could be a possibility to use exoskeleton to bear the weight when the patient would be moving.
+          </p>
+          <h4>Relative motion</h4>
+            <hr>
+            <p class = "text-justify mx-3">With sensors, that are stuck to the patient's body and to the vest, we’re able to say if the vest is moving relative to the body. This way we can program the data so, that it changes the placement of where the scanning data is coming from, so the results stay accurate.
+          </p>
+        <h4>First Prototype</h4>
+        <hr>
+        <img src="../../static/first_prototype1.jpg" alt="halfway_show" style="max-height:500px">
+        <hr>
+        <h4 calss="alert-heading">Prototype for Motion Capture</h4>
+          <hr>
+        <img src="../../static/Vest_Draft 2.jpg" alt="halfway_show" style="max-height:500px">
+        </div>
+      </div>
+
 </div>
 {% endblock %}
